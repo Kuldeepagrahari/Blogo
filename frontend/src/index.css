@@ -7,11 +7,18 @@
     color:white;
     padding: 0;
     margin: 0;
-    font-size: 3vw;
+    
     box-sizing: border-box;
 
 }
 .app{
     background-color:black;
-    background-image: linear-gradient(45, blue,rgb(7, 173, 239) ,rgb(34, 4, 230));
+    /* margin-top: 15vh; */
+    /* background-image: linear-gradient(45, blue,rgb(7, 173, 239) ,rgb(34, 4, 230)); */
+}
+.home-page{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
 }

@@ -1,0 +1,122 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-image: linear-gradient(45deg,rgb(11, 245, 245), rgb(85, 5, 245), rgb(251, 251, 2));
+    width:100%;
+    position: fixed;
+    height: 13vh;
+}
+.nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:30%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 25%;
+    gap:8%;
+}
+.profile p{
+    /* background-color: black; */
+    padding:5px 10px;
+    /* padding-bottom: 5px; */
+    border-radius: 5px;
+    width:50%;
+   text-align: center;
+   border:2px black solid;
+   font-weight: bold;
+   color: black;
+}
+.profile img{
+   height:40px;
+   width: 40px;
+   border-radius: 50%;
+}
+.profile button{
+    
+    padding: 5px 10px;
+    /* background-image: linear-gradient(45deg, rgb(3, 3, 3), rgb(245, 253, 7)); */
+    background-color: black;
+    box-shadow: 2px 2px 10px black;
+    border-radius: 5px;
+    border: none;
+    color:white;
+    font-weight: bold;
+
+}
+.profile button:hover{
+    transform: scale(1.05);
+}
+.nav ul li:hover{
+    background-color: black;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.nav ul  button{
+    background-image: linear-gradient(45deg, yellow, orange);
+    border-radius: 5px;
+    padding: 5px 10px;
+    color:black;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px black;
+}
+.nav ul  button:hover{
+    transform: scale(1.05);
+}
+.login-nav button{
+    background-image: linear-gradient(45deg, rgb(60, 0, 255), rgb(212, 0, 255));
+    border-radius: 5px;
+    padding: 5px 10px;
+    color:white;
+    font-weight: bold;
+    box-shadow: 2px 2px 10px black;
+    border: 2px black solid;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0;
+    background-image: linear-gradient(45deg, rgb(241, 241, 7), rgb(244, 6, 224), blue);
+    height:40vh;
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    width:100%;
+    padding:5vh 10vw
+    
+}
+.footer .motive{
+    width:40%;
+    
+}
+.social-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /* height:80%; */
+    
+}
+.motive p{
+    color:black;
+    font-weight: 600;
+    font-size: 1.3vw;
+}
+.contact{
+    color:black;
+    font-weight: bold;
+}
+.social-links h1{
+    font-weight: bolder;
+    margin-bottom: 5px;
+}
+.social-links a{
+    border: 2px black solid;
+    padding: 6px 20px;
+    background-color: black;
+    border-radius: 10px;
+}
