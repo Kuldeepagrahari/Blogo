@@ -1,3 +1,5 @@
+
+
 .nav{
     display: flex;
     align-items: center;
@@ -6,6 +8,26 @@
     width:100%;
     position: fixed;
     height: 13vh;
+}
+
+.nav .logo img{
+   width:150px;
+   
+   
+}
+ .logo{
+    width:200px;
+    height:60px;
+    /* background-color: black; */
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding:5px 20px; */
+}
+ .logo h1{
+    font-size: 30px;
+    font-weight: bolder;
 }
 .nav ul{
     display: flex;
@@ -26,10 +48,16 @@
     /* padding-bottom: 5px; */
     border-radius: 5px;
     width:50%;
-   text-align: center;
-   border:2px black solid;
+   /* text-align: center; */
+   background-image: linear-gradient(45deg, rgb(90, 6, 226), blue);
+   /* border:2px black solid; */
    font-weight: bold;
-   color: black;
+   color: white;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height:40px;
+   box-shadow: 2px 2px 10px black;
 }
 .profile img{
    height:40px;
@@ -41,11 +69,12 @@
     padding: 5px 10px;
     /* background-image: linear-gradient(45deg, rgb(3, 3, 3), rgb(245, 253, 7)); */
     background-color: black;
-    box-shadow: 2px 2px 10px black;
+  
     border-radius: 5px;
     border: none;
     color:white;
     font-weight: bold;
+    height: 40px;
 
 }
 .profile button:hover{
@@ -78,19 +107,20 @@
 }
 
 .footer{
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
-    background-image: linear-gradient(45deg, rgb(241, 241, 7), rgb(244, 6, 224), blue);
+    background-image: linear-gradient(45deg,blue, rgb(93, 5, 245), yellow);
     height:40vh;
     display: flex;
     /* align-items: center; */
     justify-content: space-around;
     width:100%;
-    padding:5vh 10vw
+    padding:5vh 10vw;
+    margin-top: 15vh;
     
 }
 .footer .motive{
-    width:40%;
+    width:30%;
     
 }
 .social-links{
@@ -102,21 +132,142 @@
     
 }
 .motive p{
-    color:black;
-    font-weight: 600;
+    color:white;
+    font-weight: 400;
     font-size: 1.3vw;
 }
 .contact{
+    width:30%;
+}
+.contact p{
+    background-image: linear-gradient(45deg, yellow, orange);
     color:black;
     font-weight: bold;
+    margin-bottom: 10px;
+    padding:10px 20px;
+    border-radius: 5px;
+    width:100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap:10px;
 }
 .social-links h1{
     font-weight: bolder;
     margin-bottom: 5px;
+    color: black;
+    font-size: 2vw;
 }
 .social-links a{
     border: 2px black solid;
-    padding: 6px 20px;
+    padding: 4px 20px;
     background-color: black;
+    border-radius: 5px;
+}
+.contact p img{
+    width:20px;
+    /* height: 20px; */
+}
+.login{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: black;
+    font-weight: bold;
+    padding-top: 10vh;
+   
+    /* font-size: 3vw; */
+}
+.login-big-box{
+    display: flex;
     border-radius: 10px;
+    background-color: #e65454;
+    height: 70vh;
+
+    width: 660px;
+    
+}
+.login-album{
+    background-image: linear-gradient(45deg, blue, skyblue);
+    height: 75vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    width:310px;
+     
+
+}
+.login-album img{
+    width:200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.login-box{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+   background-image: linear-gradient(45deg, rgb(212, 229, 235), rgb(182, 182, 232));
+   height: 75vh;
+   width: 350px;
+   /* border-radius: 20px; */
+}
+.login-box h1{
+    color: blue;
+    font-size: 3vw;
+    margin-bottom: 10px;
+}
+.login-album h1{
+    font-size: 3vw;
+}
+.login-box input{
+    padding: 5px 10px;
+    border: none;
+    width:80%;
+    border-radius: 5px;
+    height: 35px;
+    color:rgb(118, 117, 117);
+    font-weight: 500;
+    /* margin-bottom: -10px; */
+    
+}
+.login-or{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: rgb(82, 81, 81);
+    width: 80%;
+
+}
+.login-or p{
+    color:black;
+}
+#submit{
+    border: none;
+    padding:5px 20px;
+    background-image: linear-gradient(45deg, rgb(235, 135, 233), blue, rgb(59, 241, 43));
+    width: 280px;
+    margin-top: 10px;
+    border-radius: 10px;
+    height: 50px;
+
+}
+.or-btn{
+    margin-top: 20px;
+    color:rgb(94, 9, 230);
+}
+.or-btn:hover{
+    border: none;
+    padding:5px 10px;
+    background-color:rgb(94, 9, 230);
+    width: 15vw;
+    margin-top: 10px;
+    border-radius: 5px;
+    height: 35px;
+    color: white;
+    
 }

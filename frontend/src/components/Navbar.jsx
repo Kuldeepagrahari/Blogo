@@ -1,16 +1,21 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import "./compo.css"
+import logo from "../assets/SamBlogs3.png"
+import Login from '../pages/Login'
 const Navbar = () => {
 
-  var isLogin = true;
+  var isLogin = false;
   return (
     <div className='nav'>
-      <img src="" alt="my_logo" />
+      <span className='logo'><h1>Sam</h1><h1>BLOGS.</h1></span>
       <ul>
-        <li>Home</li>
-        <li>Your Blogs</li>
+        <Link to="/"><li>Home</li></Link>
+        <Link to="/myblogs"><li>Your Blogs</li></Link>
+        
         <li>Bloggers</li>
-        <button>Admin</button>
+        <Link to="/admin"><button>Admin</button></Link>
+        
 
       </ul>
 
@@ -21,7 +26,9 @@ const Navbar = () => {
          <p>Username</p>
          
       </div></>:
-      <div className="login-nav"><button>Login / Register</button></div>}
+      <div className="login-nav" >
+        <button><Link to="/login">Login / Register</Link></button>
+       </div>}
 
 
     </div>
