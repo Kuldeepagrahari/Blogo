@@ -4,6 +4,7 @@ const PostDetails = () => {
   return (
     <div>
       <h1>post det</h1>
+      
     </div>
   )
 }

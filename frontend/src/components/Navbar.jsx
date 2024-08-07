@@ -1,34 +1,35 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 import "./compo.css"
-import logo from "../assets/SamBlogs3.png"
+
 import Login from '../pages/Login'
 const Navbar = () => {
 
-  var isLogin = false;
+  var isLogin = true;
   return (
     <div className='nav'>
       <span className='logo'><h1>Sam</h1><h1>BLOGS.</h1></span>
       <ul>
-        <Link to="/"><li>Home</li></Link>
-        <Link to="/myblogs"><li>Your Blogs</li></Link>
-        
-        <li>Bloggers</li>
-        <Link to="/admin"><button>Admin</button></Link>
-        
+        <NavLink style={({ isActive }) => ({ borderBottom: isActive ? '3px solid violet' : '' , paddingBottom: isActive ? '0.5vh' : ""})} to="/"><li>Home</li></NavLink>
+        <NavLink style={({ isActive }) => ({ borderBottom: isActive ? '3px solid violet' : '' , paddingBottom: isActive ? '0.5vh' : ""})} to="/myblogs"><li>Write Blogs</li></NavLink>
+        <NavLink style={({ isActive }) => ({ borderBottom: isActive ? '3px solid violet' : '',paddingBottom: isActive ? '0.5vh' : "" })} to="/Bloggers">  <li>Bloggers</li></NavLink>
+
+        <NavLink style={({ isActive }) => ({ borderBottom: isActive ? '4px solid orangered' : '' , paddingBottom: isActive ? '1vh' : ""})} to="/admin"><button>Admin</button></NavLink>
+
 
       </ul>
 
-     {isLogin == true? <><div className="profile">
-      <button>Profile</button>
-         <img src="https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?uid=R152793199&ga=GA1.1.1114204752.1718366789&semt=ais_user" alt="avatar" />
+      {isLogin == true ? <><div className="profile">
+        <NavLink to="/profile" style={({ isActive }) => ({ borderBottom: isActive ? '4px solid white' : '' , paddingBottom: isActive ? '0.5vh' : ""})}>
+          <button >Profile</button></NavLink>
+        <img src="https://img.freepik.com/free-vector/blue-circle-with-white-user_78370-4707.jpg?uid=R152793199&ga=GA1.1.1114204752.1718366789&semt=ais_user" alt="avatar" />
 
-         <p>Username</p>
-         
-      </div></>:
-      <div className="login-nav" >
-        <button><Link to="/login">Login / Register</Link></button>
-       </div>}
+        <p>Username</p>
+
+      </div></> :
+        <div className="login-nav" >
+          <button><Link to="/login">Login/Register</Link></button>
+        </div>}
 
 
     </div>

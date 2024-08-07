@@ -10,6 +10,11 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
+  phone:{
+    type:String,
+    required:true,
+    unique:true
+  },
   password: {
     type: String,
     required: true,
@@ -27,4 +32,4 @@ userSchema.pre('save', async function (next) {
 
 const User = mongoose.model('User', userSchema);
 
-module.exports = User;
+export default User

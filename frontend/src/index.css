@@ -13,12 +13,17 @@
 }
 .app{
     background-color:black;
+    min-height: 100vh;
     /* margin-top: 15vh; */
     /* background-image: linear-gradient(45, blue,rgb(7, 173, 239) ,rgb(34, 4, 230)); */
 }
 .home-page{
     display: flex;
    flex-direction: column;
-   align-items: center;
+   /* align-items: center; */
    justify-content: space-between;
+}
+body{
+    min-height: 100vh;
+    background-color: black;
 }
