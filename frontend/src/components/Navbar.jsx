@@ -5,7 +5,7 @@ import logo from "../assets/Blogger.png"
 import Login from '../pages/Login'
 const Navbar = () => {
 
-  var isLogin = true;
+  var isLogin = false;
   return (
     <div className='nav'>
       <span className='logo'><img src={logo} style={{height:"11vh", borderRadius:"10px",boxShadow:"5px 5px 10px black"}}alt="" /></span>
