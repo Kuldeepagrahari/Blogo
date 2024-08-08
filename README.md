@@ -1,6 +1,6 @@
 
 
-Blog Application
+Blog Application<br/>
 A modern and fast blog application built with Vite and React. This project leverages the power of Vite for an optimized and developer-friendly build process, alongside React for a robust, component-based UI.
 
 Features
