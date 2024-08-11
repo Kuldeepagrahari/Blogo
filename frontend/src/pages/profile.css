@@ -45,8 +45,9 @@
 }
 .profile-cont .left-left img{
     padding: 2vh;
-    border: 2px orangered solid;
+    border: 1px rgb(247, 247, 244) solid;
     width: 80%;
+
     height:45vh;
-    border-radius: 10px;
+    border-radius: 50%;
 }

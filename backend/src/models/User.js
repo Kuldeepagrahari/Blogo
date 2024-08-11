@@ -10,11 +10,15 @@ const userSchema = new mongoose.Schema({
     required: true,
     unique: true,
   },
-  phone:{
+  phone:{  
     type:String,
     required:true,
     unique:true
   },
+  followers:{  
+    type:String
+  },
+ 
   password: {
     type: String,
     required: true,

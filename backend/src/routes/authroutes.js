@@ -9,4 +9,5 @@ router.route("/login").post( loginUser);
 router.route("/").get((req, res)=>{
     res.send("hey sam")
 })
+
 export default router

@@ -45,7 +45,7 @@
 .blogger-card{
     width: 14vw;
     height: 40vh;
-    border: 2px skyblue solid;
+    /* border: 2px skyblue solid; */
     padding: 2vh 1vw;
     display: flex;
     align-items: center;
@@ -53,6 +53,8 @@
     flex-direction: column;
     /* flex: 1 1 200px; */
     box-sizing: border-box;
+    background-image: linear-gradient(30deg, rgb(13, 216, 223), rgb(73, 46, 228));
+    
     border-radius: 10px;
 }
 .blogger-card img{
@@ -63,7 +65,12 @@
     border: 2px rgb(6, 240, 248) solid;
     /* border: 1px rgb(235, 230, 230) solid; */
 }
+.blogger-card h2{
+    color:rgb(255, 208, 0);
+    font-size: 1.5vw;
+    font-weight: bold;
 
+}
 .blogger-card button{
     background-image: linear-gradient(45deg, rgb(188, 22, 239), blue);
     color:white;
@@ -79,14 +86,22 @@
     font-weight: bold;
 }
 .blogger-card button:hover{
-    background-color: black;
+    background-color:transparent;
+    color: black;
     background-image: none;
-    border: 2px solid skyblue;
+    border: 2px solid black;
+    
+   
 }
 .blogger-card:hover{
    box-shadow: 10px 10px 50px inset rgb(155, 135, 235);
     color:black;
     border: none;
     transform: scale(1.1);
+    background-image: linear-gradient(180deg, rgb(236, 97, 5), rgb(250, 249, 248), rgb(0, 255, 38));
+    
    
+}
+.blogger-card:hover  h2{
+    color:blue;
 }
