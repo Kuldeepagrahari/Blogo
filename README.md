@@ -2,6 +2,10 @@
 Blog Application<br/>
 A modern and fast blog application built with Vite and React. This project leverages the power of Vite for an optimized and developer-friendly build process, alongside React for a robust, component-based UI.
 
+Packages:
+1. JoditEditor for inserting editor box in write blog module
+2. 
+
 Features
 📝 Create, Read, Update, Delete (CRUD) Operations: Manage blog posts with ease.<br/>
 🔍 Search Functionality: Quickly find posts by keywords.<br/>
