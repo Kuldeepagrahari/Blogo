@@ -25,4 +25,10 @@ const getAllBlogs = async(req,res) => {
        console.log(err)
     }
 }
-export { postBlog, getAllBlogs }
+const postComment = () => {
+
+}
+const postReply = () => {
+
+}
+export { postBlog, getAllBlogs , postComment, postReply}

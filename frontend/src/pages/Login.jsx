@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import my_pic from '../assets/my_pic.jpg'
+
+import mobile from "../assets/mobile2.png"
 
 const Login = () => {
   const navigate = useNavigate()
@@ -45,9 +46,9 @@ const Login = () => {
   return (
     <div className='login'>
       <div className="login-big-box">
-      <div className="login-album">
-        <h1>SamBlogs.</h1>
-        <img src={my_pic} alt="" />
+      <div className="login-album2">
+        {/* <h1>SamBlogs.</h1> */}
+        <img src={mobile} alt="" />
       </div>
       <form className="login-box" onSubmit={handleSubmit}>
         <h1>Login</h1>

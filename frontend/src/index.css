@@ -4,7 +4,7 @@
 
 *{
 
-    color:white;
+    /* color:white; */
     padding: 0;
     margin: 0;
     
@@ -12,8 +12,9 @@
 
 }
 .app{
-    background-color:black;
+    /* background-color:; */
     min-height: 100vh;
+
     /* margin-top: 15vh; */
     /* background-image: linear-gradient(45, blue,rgb(7, 173, 239) ,rgb(34, 4, 230)); */
 }
@@ -25,5 +26,5 @@
 }
 body{
     min-height: 100vh;
-    background-color: black;
+    background-color:#e6ecf7;
 }

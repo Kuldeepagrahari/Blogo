@@ -1,26 +1,27 @@
-import {Schema, model} from "mongoose"
+import { Schema, model } from "mongoose";
 
 const blogSchema = new Schema({
-    owner:{
-        type:String
+    authorId: {
+        type: String,
+        required: true
     },
-    title:{
-        type:String, 
-        required:true
+    title: {
+        type: String,
+        required: true,
+        unique: true
     },
-    content:{
-        type:String, 
-        required:true
+    content: {
+        type: String,
+        required: true
     },
-    comment:{
-        type:String
+    commentId:{type:String, required:true},
+    likes: {
+        type: Number,
+        default: 0
     },
-    likes:{
-        type:String
-    }
-   
-})
+    createdAt:{ type: Date, default: Date.now }
+});
 
-const Blog = new model("Blog", blogSchema)
+const Blog = model("Blog", blogSchema);
 
-export default Blog
+export default Blog;

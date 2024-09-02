@@ -12,11 +12,11 @@ const Profile = () => {
         <div className="left">
           <div className="left-left">
             <img src="https://i.pinimg.com/474x/b8/fe/18/b8fe185770d09f819047aebcbebf9899.jpg" alt="" />
-            <h3 style={{fontSize:"1.2vw", color:"gold", marginTop:"4vh", height:"8vh", boxSizing:"border-box", width:"80%"}}> King of Cricket || WC 2011, 2024 winner</h3>
-            <p style={{fontSize:"1vw", marginTop:"1vh", height:"30vh", display:"flex", width:"80%"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odio reiciendis dolorum autem aperiam molestiae distinctio repudiandae </p>
+            <h3 style={{fontSize:"1.2vw", color:"black", marginTop:"4vh", height:"8vh", boxSizing:"border-box", width:"80%", fontWeight:"500"}}> King of Cricket || WC 2011, 2024 winner</h3>
+            <p style={{fontSize:"1vw", marginTop:"1vh", height:"30vh", display:"flex", width:"80%", color:"black"}}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo odio reiciendis dolorum autem aperiam molestiae distinctio repudiandae </p>
           </div>
-          <div className="left-right">
-            <h1>Virat Kohli</h1>
+          <div className="left-right" style={{color:"black"}}>
+            <h1 style={{color:"black"}}>Virat Kohli</h1>
             <h3>Company</h3>
             <h3>Degree</h3>
             <h3>Current job</h3>

@@ -1,8 +1,10 @@
 import React, { useState } from 'react'
-import my_pic from '../assets/my_pic.jpg'
+
 import {Link} from 'react-router-dom'
 import "../components/compo.css"
 import { useNavigate } from 'react-router-dom'
+import mobile from "../assets/B.png"
+
 const Register = () => {
   const navigate = useNavigate()
   const [userdata, setUserdata] = useState({
@@ -53,8 +55,8 @@ const Register = () => {
     <div className='login'>
     <div className="login-big-box">
     <div className="login-album">
-      <h1>SamBlogs.</h1>
-      <img src={my_pic} alt="" />
+      
+      <img src={mobile} alt="" />
     </div>
     <form className="login-box" onSubmit={handleSubmit}>
       <h1>Register</h1>

@@ -3,18 +3,19 @@ import { Link, NavLink } from 'react-router-dom'
 import "./compo.css"
 import logo from "../assets/Blogger.png"
 import Login from '../pages/Login'
+{/* <img src={logo} style={{height:"11vh", borderRadius:"10px",boxShadow:"5px 5px 10px black"}}alt="" /> */}
 const Navbar = () => {
 
-  var isLogin = false;
+  var isLogin = false
   return (
     <div className='nav'>
-      <span className='logo'><img src={logo} style={{height:"11vh", borderRadius:"10px",boxShadow:"5px 5px 10px black"}}alt="" /></span>
+      <span className='logo' style={{fontSize:"40px", fontWeight:"bold", color:"white"}}>Blogger.</span>
       <ul>
-        <NavLink style={({ isActive }) => ({ borderBottom: isActive ? '3px solid violet' : '' , paddingBottom: isActive ? '0.5vh' : ""})} to="/"><li>Home</li></NavLink>
-        <NavLink style={({ isActive }) => ({ borderBottom: isActive ? '3px solid violet' : '' , paddingBottom: isActive ? '0.5vh' : ""})} to="/myblogs"><li>Write Blogs</li></NavLink>
-        <NavLink style={({ isActive }) => ({ borderBottom: isActive ? '3px solid violet' : '',paddingBottom: isActive ? '0.5vh' : "" })} to="/Bloggers">  <li>Bloggers</li></NavLink>
+        <NavLink style={({ isActive }) => ({ borderBottom: isActive ? '3px solid white' : '' , paddingBottom: isActive ? '0.5vh' : ""})} to="/"><li>Home</li></NavLink>
+        <NavLink style={({ isActive }) => ({ borderBottom: isActive ? '3px solid white' : '' , paddingBottom: isActive ? '0.5vh' : ""})} to="/myblogs"><li>Write Blogs</li></NavLink>
+        <NavLink style={({ isActive }) => ({ borderBottom: isActive ? '3px solid white' : '',paddingBottom: isActive ? '0.5vh' : "" })} to="/Bloggers">  <li>Bloggers</li></NavLink>
 
-        <NavLink style={({ isActive }) => ({ borderBottom: isActive ? '4px solid orangered' : '' , paddingBottom: isActive ? '1vh' : ""})} to="/admin"><button>Admin</button></NavLink>
+        <NavLink style={({ isActive }) => ({ borderBottom: isActive ? '4px solid white' : '' , paddingBottom: isActive ? '1vh' : ""})} to="/admin"><button>Admin</button></NavLink>
 
 
       </ul>

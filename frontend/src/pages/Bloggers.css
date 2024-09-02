@@ -2,9 +2,13 @@
 .Blogger-main{
     display: flex;
     flex-direction: column;
-    margin-top: 18vh;
+    margin-top: 12vh;
+    background-color:#f7e9dd;
+    /* background-color: #f3ecf0; */
+
 }
 .blogger-head{
+    margin-top: 4vh;
     display: flex;
     padding-left:  60vw;
 }
@@ -14,20 +18,24 @@
     padding: 1vh 1vw;
     height: 5vh;
     color: black;
+    outline: none;
     font-size: 1.2vw;
+    background-color: rgb(254, 250, 250);
+    box-shadow: 2px 2px 6px rgb(104, 104, 104);
 }
 .blogger-head button{
     margin-left: 1vw;
     height: 5vh;
     padding: 1vh 1vw;
     border-radius: 5px;
-    background-color: rgb(3, 166, 3);
+    background-color: rgb(252, 7, 97);
     color:white;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 1.1vw;
     font-weight: bold;
+    box-shadow: 2px 2px 5px rgb(78, 77, 77);
 }
 .bloggers{
     margin-top: 4vh;
@@ -53,27 +61,37 @@
     flex-direction: column;
     /* flex: 1 1 200px; */
     box-sizing: border-box;
-    background-image: linear-gradient(30deg, rgb(13, 216, 223), rgb(73, 46, 228));
+    background-image: linear-gradient(30deg, rgb(247, 245, 246), rgb(252, 252, 255));
     
     border-radius: 10px;
+    box-shadow: 2px 2px 5px rgb(136, 132, 132);
 }
+.blogger-card:hover{
+    /* background-image: linear-gradient(45deg, white,white,white,rgb(251, 235, 6), rgb(255, 85, 0)); */
+    background-color: pink;
+    transform: scale(1.01);
+    
+}
+
 .blogger-card img{
     width: 9vw;
-    height: 18vh;
+    height: 20vh;
     border-radius: 50%;
     padding: 1vh;
     border: 2px rgb(6, 240, 248) solid;
+    background-color:white;
     /* border: 1px rgb(235, 230, 230) solid; */
 }
 .blogger-card h2{
-    color:rgb(255, 208, 0);
+    color:rgb(13, 13, 13);
     font-size: 1.5vw;
     font-weight: bold;
 
 }
 .blogger-card button{
-    background-image: linear-gradient(45deg, rgb(188, 22, 239), blue);
-    color:white;
+    /* background-image: linear-gradient(45deg, rgb(244, 5, 136), rgb(97, 238, 238)); */
+    color:rgb(252, 13, 97);
+
     padding: 1vh 2vw;
     font-size: 1vw;
     border-radius: 20px;
@@ -84,24 +102,17 @@
     width: 90%;
     /* border: none; */
     font-weight: bold;
+    box-shadow: 2px 2px 5px black;
 }
 .blogger-card button:hover{
-    background-color:transparent;
-    color: black;
-    background-image: none;
-    border: 2px solid black;
+  transform: scale(1.01);
+  background-color: #f10774;
+  color: white;
     
    
 }
-.blogger-card:hover{
-   box-shadow: 10px 10px 50px inset rgb(155, 135, 235);
-    color:black;
-    border: none;
-    transform: scale(1.1);
-    background-image: linear-gradient(180deg, rgb(236, 97, 5), rgb(250, 249, 248), rgb(0, 255, 38));
-    
-   
-}
+
 .blogger-card:hover  h2{
-    color:blue;
+    /* color:blue; */
+    font-size: 2vw;
 }

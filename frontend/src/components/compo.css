@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: space-around;
-    background-image: linear-gradient(45deg,rgb(11, 245, 245), rgb(85, 5, 245), rgb(251, 251, 2));
+    background-image: linear-gradient(45deg,rgb(11, 245, 245), rgb(245, 5, 133), rgb(251, 251, 2));
     width:100%;
     position: fixed;
     height: 13vh;
@@ -109,7 +109,7 @@
 .footer{
     /* position: fixed; */
     bottom: 0;
-    background-image: linear-gradient(45deg,blue, rgb(93, 5, 245), yellow);
+    background-image: linear-gradient(45deg,rgb(255, 0, 217), rgb(93, 5, 245), yellow);
     height:40vh;
     display: flex;
     /* align-items: center; */
@@ -176,50 +176,63 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: black;
+    background-color: transparent;
     font-weight: bold;
+    background-color: #f3ecf0;
     padding-top: 10vh;
+    /* background: url("https://img.freepik.com/free-vector/gradient-abstract-background-with-different-shapes_23-2149112890.jpg?ga=GA1.1.1114204752.1718366789&semt=ais_hybrid") no-repeat center center / cover; */
+
+    
    
     /* font-size: 3vw; */
 }
 .login-big-box{
     display: flex;
+    justify-content: space-between;
     border-radius: 10px;
-    background-color: #e65454;
+    /* background-color: #e65454; */
     height: 70vh;
 
-    width: 660px;
-    
+    width: 800px;
+    /* box-shadow: 5px -5px 5px rgb(138, 137, 137); */
+    border-radius: 20px;
 }
-.login-album{
-    background-image: linear-gradient(45deg, blue, skyblue);
+.login-album, .login-album2{
+    /* background-image: linear-gradient(45deg, blue, skyblue); */
     height: 75vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-direction: column;
-    width:310px;
-     
+    width:450px;
+     border-top-left-radius: 10px;
+     border-bottom-left-radius: 10px;
 
 }
 .login-album img{
-    width:200px;
-    height: 200px;
-    border-radius: 50%;
+    width:300px;
+    height: 70vh;
+    border-radius: 20px;
 }
-
+.login-album2 img{
+    width:400px;
+    height: 70vh;
+    border-radius: 20px;
+}
 .login-box{
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: space-around;
-   background-image: linear-gradient(45deg, rgb(212, 229, 235), rgb(182, 182, 232));
+   /* background-image: linear-gradient(45deg, rgb(212, 229, 235), rgb(182, 182, 232)); */
    height: 75vh;
+   border-top-right-radius: 10px;
+     border-bottom-right-radius: 10px;
    width: 350px;
    /* border-radius: 20px; */
 }
 .login-box h1{
-    color: blue;
+    color: rgb(248, 4, 106);
     font-size: 3vw;
     margin-bottom: 10px;
 }
@@ -231,9 +244,11 @@
     border: none;
     width:80%;
     border-radius: 5px;
-    height: 35px;
+    height: 40px;
     color:rgb(118, 117, 117);
     font-weight: 500;
+    box-shadow: 3px 3px 6px rgb(159, 161, 161);
+    outline: none;
     /* margin-bottom: -10px; */
     
 }
@@ -242,35 +257,37 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    color: rgb(82, 81, 81);
+    color: white;
     width: 80%;
 
 }
 .login-or p{
-    color:black;
+    color:rgb(94, 93, 93);
 }
 #submit{
     border: none;
     padding:5px 20px;
-    background-image: linear-gradient(45deg, rgb(235, 135, 233), blue, rgb(59, 241, 43));
+    /* background-image: linear-gradient(45deg, rgb(235, 135, 233), blue, rgb(59, 241, 43)); */
+    background-color: rgb(7, 187, 252);
     width: 280px;
     margin-top: 10px;
     border-radius: 10px;
+    box-shadow: 3px 3px 10px gray;
     height: 50px;
 
 }
 .or-btn{
     margin-top: 20px;
-    color:rgb(94, 9, 230);
+    color:rgb(239, 75, 154);
 }
 .or-btn:hover{
     border: none;
     padding:5px 10px;
-    background-color:rgb(94, 9, 230);
+    background-color:rgb(230, 9, 131);
     width: 15vw;
     margin-top: 10px;
     border-radius: 5px;
-    height: 35px;
+    /* height: 35px; */
     color: white;
     
 }
